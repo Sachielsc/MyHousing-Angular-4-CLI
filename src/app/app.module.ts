@@ -2,10 +2,9 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ServerComponent } from './server/server.component';
 import { AppComponent } from './app.component';
-import { TestComponent } from './test/test.component';
-import { ReportComponent } from './report/report.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { Demo1HeadComponent } from './demo1-head/demo1-head.component';
 import { Demo1NavComponent } from './demo1-nav/demo1-nav.component';
 import { Demo1FormComponent } from './demo1-form/demo1-form.component';
@@ -16,9 +15,6 @@ import { Demo1CarouselComponent } from './demo1-carousel/demo1-carousel.componen
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent,
-    TestComponent,
-    ReportComponent,
     Demo1HeadComponent,
     Demo1NavComponent,
     Demo1FormComponent,
@@ -27,7 +23,8 @@ import { Demo1CarouselComponent } from './demo1-carousel/demo1-carousel.componen
     Demo1CarouselComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
