@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 import { Demo1HeadComponent } from './demo1-head/demo1-head.component';
 import { Demo1NavComponent } from './demo1-nav/demo1-nav.component';
@@ -24,6 +25,7 @@ import { Demo1CarouselComponent } from './demo1-carousel/demo1-carousel.componen
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     NgbModule.forRoot()
   ],
   providers: [],
