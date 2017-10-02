@@ -1,15 +1,83 @@
 <div class="MH-body">
+  <h3>Tell us the type of your desired estate: (checkbox demo)</h3>
   <div class="btn-group" data-toggle="buttons">
     <label class="btn-primary" ngbButtonLabel>
-      <input type="checkbox" ngbButton [(ngModel)]="model.left"> Left (pre-checked)
+      <input type="checkbox" ngbButton [(ngModel)]="model.left"> House (pre-checked)
     </label>
     <label class="btn-primary" ngbButtonLabel>
-      <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Middle
+      <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Apartment
     </label>
     <label class="btn-primary" ngbButtonLabel>
-      <input type="checkbox" ngbButton [(ngModel)]="model.right"> Right
+      <input type="checkbox" ngbButton [(ngModel)]="model.right"> Condo
     </label>
   </div>
-  <hr>
   <pre>{{model | json}}</pre>
+</div>
+
+<div class="MH-body">
+  <h3>Tell us about more details: (dropdown demo)</h3>
+  <div class="row">
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button class="dropdown-item">Action - 1</button>
+          <button class="dropdown-item">Another Action</button>
+          <button class="dropdown-item">Something else is here</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button class="dropdown-item">Action - 1</button>
+          <button class="dropdown-item">Another Action</button>
+          <button class="dropdown-item">Something else is here</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button class="dropdown-item">Action - 1</button>
+          <button class="dropdown-item">Another Action</button>
+          <button class="dropdown-item">Something else is here</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button class="dropdown-item">Action - 1</button>
+          <button class="dropdown-item">Another Action</button>
+          <button class="dropdown-item">Something else is here</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button class="dropdown-item">Action - 1</button>
+          <button class="dropdown-item">Another Action</button>
+          <button class="dropdown-item">Something else is here</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button class="dropdown-item">Action - 1</button>
+          <button class="dropdown-item">Another Action</button>
+          <button class="dropdown-item">Something else is here</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
