@@ -1,17 +1,18 @@
 <div class="MH-body">
   <h3>Check the type of your desired estate: (checkbox demo)</h3>
-  <div class="btn-group" data-toggle="buttons">
-    <label class="btn-primary" ngbButtonLabel>
-      <input type="checkbox" ngbButton [(ngModel)]="model.left"> House (pre-checked)
+  <div class="btn-group" ngbRadioGroup name="radioBasic" [(ngModel)]="model">
+    <label ngbButtonLabel class="btn-primary">
+      <input ngbButton type="radio" value="House"> House (pre-checked)
     </label>
-    <label class="btn-primary" ngbButtonLabel>
-      <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Apartment
+    <label ngbButtonLabel class="btn-primary">
+      <input ngbButton type="radio" value="Apartment"> Apartment
     </label>
-    <label class="btn-primary" ngbButtonLabel>
-      <input type="checkbox" ngbButton [(ngModel)]="model.right"> Condo
+    <label ngbButtonLabel class="btn-primary">
+      <input ngbButton type="radio" value="Condo"> Condo
     </label>
   </div>
-  <pre>{{model | json}}</pre>
+  <p class="select-result">Select Result:</p>
+  <pre>{{model}}</pre>
 </div>
 
 <div class="MH-body">
@@ -96,4 +97,93 @@
       </div>
     </div>
   </form>
+</div>
+
+<div class="MH-body">
+  <h3>Search Result: (Media-card demo)</h3>
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="property-container">
+        <div class="property-image">
+          <img src="../../assets/images/img06.jpg" alt="mikha real estate theme">
+          <div class="property-price">
+            <h4>Residential</h4>
+            <span>$800,000</span>
+          </div>
+        </div>
+        <div class="property-features">
+          <span><i class="fa fa-home"></i> 5,000 m<sup>2</sup></span>
+          <span><i class="fa fa-hdd-o"></i> 2 Bed</span>
+          <span><i class="fa fa-male"></i> 2 Bath</span>
+          <span><i class="fa fa-car"></i> 2 Garages</span>
+        </div>
+        <div class="property-content">
+          <h3><a href="#">The Urban Life</a> <small>22, JJ Road, Yogyakarta</small></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="property-footer">
+          <a href="#" title="Add to favorite"><i class="fa fa-heart"></i></a>
+          <a href="#" title="Contact Agent"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- break -->
+
+    <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="property-container">
+        <div class="property-image">
+          <img src="../../assets/images/img07.jpg" alt="mikha real estate theme">
+          <div class="property-price">
+            <h4>Residential</h4>
+            <span>$800,000</span>
+          </div>
+        </div>
+        <div class="property-features">
+          <span><i class="fa fa-home"></i> 6,000 m<sup>2</sup></span>
+          <span><i class="fa fa-hdd-o"></i> 3 Bed</span>
+          <span><i class="fa fa-male"></i> 2 Bath</span>
+          <span><i class="fa fa-building-o"></i> 2 Floors</span>
+        </div>
+        <div class="property-content">
+          <h3><a href="#">The Urban Life</a> <small>22, JJ Road, Yogyakarta</small></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="property-footer">
+          <a href="#" title="Add to favorite"><i class="fa fa-heart"></i></a>
+          <a href="#" title="Contact Agent"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- break -->
+
+    <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="property-container">
+        <div class="property-image">
+          <img src="../../assets/images/img08.jpg" alt="mikha real estate theme">
+          <div class="property-price">
+            <h4>Residential</h4>
+            <span>$800,000</span>
+          </div>
+        </div>
+        <div class="property-features">
+          <span><i class="fa fa-home"></i> 5,000 m<sup>2</sup></span>
+          <span><i class="fa fa-hdd-o"></i> 2 Bed</span>
+          <span><i class="fa fa-male"></i> 2 Bath</span>
+          <span><i class="fa fa-building-o"></i> 1 Floor</span>
+        </div>
+        <div class="property-content">
+          <h3><a href="#">The Urban Life</a> <small>22, JJ Road, Yogyakarta</small></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="property-footer">
+          <a href="#" title="Add to favorite"><i class="fa fa-heart"></i></a>
+          <a href="#" title="Contact Agent"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- break -->
+  </div>
 </div>

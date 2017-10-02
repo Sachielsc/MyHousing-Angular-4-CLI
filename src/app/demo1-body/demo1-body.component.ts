@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./demo1-body.component.css']
 })
 export class Demo1BodyComponent {
-    model = {
-      left: true,
-      middle: false,
-      right: false
-    };
+  model = 1;
 }
