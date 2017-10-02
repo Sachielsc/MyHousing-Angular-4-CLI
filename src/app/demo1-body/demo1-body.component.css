@@ -5,3 +5,7 @@
 pre {
   margin-top: 10px;
 }
+
+.MH-select {
+  height: 35px !important;
+}
