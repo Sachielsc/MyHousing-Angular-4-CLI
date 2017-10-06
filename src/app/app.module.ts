@@ -13,6 +13,8 @@ import { Demo1BodyComponent } from './demo1-body/demo1-body.component';
 import { Demo1FooterComponent } from './demo1-footer/demo1-footer.component';
 import { Demo1CarouselComponent } from './demo1-carousel/demo1-carousel.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterTestComponent } from './router-test/router-test.component';
+import { NavButtonGroupComponent } from './nav-button-group/nav-button-group.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { AppRoutingModule } from './app-routing.module';
     Demo1BodyComponent,
     Demo1FooterComponent,
     Demo1CarouselComponent,
+    RouterTestComponent,
+    NavButtonGroupComponent,
   ],
   imports: [
     BrowserModule,

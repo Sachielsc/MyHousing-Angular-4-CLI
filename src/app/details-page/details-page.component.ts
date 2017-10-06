@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-details-page',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  onLoadHome() {
+    this.router.navigate(['/home']);
+  }
+
+  onLoadSearch() {
+    // put some process here
+    this.router.navigate(['/search']);
+  }
+
+  onLoadBooking() {
+    // put some process here
+    this.router.navigate(['/booking']);
+  }
 }

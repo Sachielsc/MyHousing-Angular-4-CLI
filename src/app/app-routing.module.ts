@@ -10,7 +10,8 @@ import { BookingPageComponent } from './booking-page/booking-page.component';
 import { PaymentPageComponent } from './payment-page/payment-page.component';
 
 const appRoutes: Routes = [
-  { path:'', component: HomePageComponent},
+  { path:'', redirectTo: '/home', pathMatch: 'full'},
+  { path:'home', component: HomePageComponent},
   { path:'search', component: SearchPageComponent},
   { path:'details', component: DetailsPageComponent},
   { path:'booking', component: BookingPageComponent},
