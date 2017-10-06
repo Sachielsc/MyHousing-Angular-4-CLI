@@ -12,6 +12,7 @@ import { Demo1Datepicker } from './demo1-datepicker/demo1-datepicker.component';
 import { Demo1BodyComponent } from './demo1-body/demo1-body.component';
 import { Demo1FooterComponent } from './demo1-footer/demo1-footer.component';
 import { Demo1CarouselComponent } from './demo1-carousel/demo1-carousel.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,13 @@ import { Demo1CarouselComponent } from './demo1-carousel/demo1-carousel.componen
     Demo1Datepicker,
     Demo1BodyComponent,
     Demo1FooterComponent,
-    Demo1CarouselComponent
+    Demo1CarouselComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
