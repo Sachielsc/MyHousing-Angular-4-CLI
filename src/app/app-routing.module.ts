@@ -2,13 +2,21 @@
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+// router components
 import { HomePageComponent } from './home-page/home-page.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { SearchResultComponent } from './search-page/search-result/search-result.component';
 import { DetailsPageComponent } from './details-page/details-page.component';
 import { BookingPageComponent } from './booking-page/booking-page.component';
 import { PaymentPageComponent } from './payment-page/payment-page.component';
+
+// unit components
+import { SearchConditionComponent } from './search-page/search-condition/search-condition.component';
+import { NavButtonGroupComponent } from './nav-button-group/nav-button-group.component';
+import { RouterTestComponent } from './router-test/router-test.component';
+import { Demo1CarouselComponent } from './demo1-carousel/demo1-carousel.component';
 
 const appRoutes: Routes = [
   { path:'', redirectTo: '/home', pathMatch: 'full'},
@@ -23,15 +31,20 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
+    Demo1CarouselComponent,
     HomePageComponent,
     SearchPageComponent,
     DetailsPageComponent,
     BookingPageComponent,
     PaymentPageComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    SearchConditionComponent,
+    NavButtonGroupComponent,
+    RouterTestComponent
   ],
   imports: [
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    NgbModule.forRoot()
   ],
   exports: [RouterModule],
   providers: [],
