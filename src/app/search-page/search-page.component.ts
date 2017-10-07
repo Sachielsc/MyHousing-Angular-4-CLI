@@ -6,6 +6,7 @@ import {Router} from "@angular/router";
   templateUrl: './search-page.component.html',
   styleUrls: ['./search-page.component.css']
 })
+
 export class SearchPageComponent implements OnInit {
 
   constructor(private router: Router) { }
@@ -20,5 +21,9 @@ export class SearchPageComponent implements OnInit {
   onLoadDetails() {
     // put some process here
     this.router.navigate(['/details']);
+  }
+
+  onLoadSearchResult() {
+    this.router.navigate(['/search/searchresult']);
   }
 }
