@@ -17,6 +17,8 @@ import { SearchConditionComponent } from './search-page/search-condition/search-
 import { NavButtonGroupComponent } from './nav-button-group/nav-button-group.component';
 import { RouterTestComponent } from './router-test/router-test.component';
 import { Demo1CarouselComponent } from './demo1-carousel/demo1-carousel.component';
+import { Demo1FooterComponent } from './demo1-footer/demo1-footer.component';
+import { Demo1NavComponent } from './demo1-nav/demo1-nav.component';
 
 const appRoutes: Routes = [
   { path:'', redirectTo: '/home', pathMatch: 'full'},
@@ -40,7 +42,9 @@ const appRoutes: Routes = [
     SearchResultComponent,
     SearchConditionComponent,
     NavButtonGroupComponent,
-    RouterTestComponent
+    RouterTestComponent,
+    Demo1FooterComponent,
+    Demo1NavComponent,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
